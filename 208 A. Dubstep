@@ -1,0 +1,30 @@
+#include<bits/stdc++.h>
+#include <string>
+#include <iostream>
+ 
+using namespace std;
+ 
+int main()
+{
+    int i,j=0;
+  string s1,s2;
+ 
+  getline (cin, s1);
+  //cout << s1;
+  //cout << s1.length();
+ 
+  for(i=0;i < s1.length();i++){
+    if(s1[i] == 'W'  && s1[i+1] == 'U' && s1[i+2] == 'B' ){
+        i=i+2;
+        cout << " ";
+    }
+    else{
+        cout << s1[i];
+    }
+ 
+  }
+ 
+ 
+ 
+    return 0;
+}

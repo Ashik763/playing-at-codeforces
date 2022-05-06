@@ -1,0 +1,44 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+
+    int k,l,m,n,d,i,j,ct=0;
+    cin >> k >> l >> m >> n >> d ;
+    int arr[d+1];
+
+    for(i=1;i<d+1;i++){
+           arr[i] = 0 ;
+    }
+    for(j=1;j<d+1;j++){
+        arr[k*j] = 1 ;
+        if(k*j > d) break;
+
+    }
+    for(j=1;j<d+1;j++){
+          arr[l*j] = 1 ;
+        if(l*j > d) break;
+    }
+    for(j=1;j<d+1;j++){
+          arr[m*j] = 1 ;
+        if(m*j > d) break;
+    }
+
+      for(j=1;j<d+1;j++){
+          arr[n*j] = 1 ;
+        if(n*j > d) break;
+    }
+
+    for(i=1;i<d+1;i++){
+        if(arr[i] == 1){
+            ct++;
+        }
+    }
+
+
+
+
+
+    cout << ct << endl;
+    return 0;
+}
