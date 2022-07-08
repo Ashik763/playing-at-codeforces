@@ -18,7 +18,7 @@ int main()
   for(int i=0;i<n/2;i++){
     if((i+1)%2 != 0){
       swap(arr[i],arr[n-1 -i]);
-      // cout << "J";
+     
     }
   }
   for(int i=0;i<n;i++){
